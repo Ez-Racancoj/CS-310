@@ -1,6 +1,5 @@
 //Ez Racancoj this program allows the user to select from different oporation 
 //and keeps track of their fitness bassed on the information given 
-//due date 10/3.
 
 #include <iostream>
 #include <string>
@@ -21,7 +20,7 @@ int main()
     string exerciseType;
     string gender;
     string name;
-    int age = 0; // Initialize age and weight to default values
+    int age = 0; // Initialize exerciseTime, age and weight to default values
     double weight = 0.0;
     double exerciseTime = 0.0;
 
@@ -103,7 +102,7 @@ int main()
             }
             break;
         case DISPLAY:
-            // Print the user’s information to the console
+            // Print the userâ€™s information to the console
             cout << '\n';
             cout << name << " (" << gender << ", " << age << " years)" << endl;
             cout << "Weight: " << weight << " kg" << endl;
