@@ -1,5 +1,4 @@
 # CS-310
-# CS 310
 ##Advanced Object-Oriented Assignments
 # Project5.cpp
 ##Update Project4.cpp to use arrays to store the weekly information
