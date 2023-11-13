@@ -1,12 +1,12 @@
-//Ez Racancoj this program allows the user to select from different oporation
-//and keeps track of their fitness bassed on the information given
-//due date 10/3.
+// Ez Racancoj 
+// This program allows the user to select from different oporations from a text menu
+// and keeps track of their fitness bassed on the information given
 
 #include <iostream>
 #include <string>
 using namespace std;
 
-void getUserInfo(string& name, string& gender, int& age)
+void getUserInfo(string& name, string& gender, int& age)// To get the users basic information 
 {
     //name
     cout << "Please enter your name: " << endl;
@@ -30,14 +30,14 @@ void getUserInfo(string& name, string& gender, int& age)
 }
 
 
-void showMenu(int uInput, int display, int quit)
+void showMenu(int uInput, int display, int quit)// To display the text menu
 {
     // Menu Display
     cout << "Enter " << uInput << " to fill out your information" << endl;
     cout << "Enter " << display << " to display your information" << endl;
     cout << "Enter " << quit << " to quit" << endl;
 }
-int getUserChoice(int& input)
+int getUserChoice(int& input) // To get the users choice from the text menu
 {
     cout << "Please choose one of the options" << endl;
     cin >> input;
@@ -52,7 +52,7 @@ int getUserChoice(int& input)
     }
     return input;
 }
-void exerciseInfo(double& weight, string& exerciseType, double& exerciseTime)
+void exerciseInfo(double& weight, string& exerciseType, double& exerciseTime) // To get the users exercise infromation 
 {
     cout << "Please enter your weight in kg: " << endl;
     cin >> weight;
@@ -126,24 +126,24 @@ int main()
             information = true;
             break;
         case DISPLAY:
-            if (information)
+            if (information) // Check if the user chose to the option to enter their exercise information
             {
                 displayInfo(name, gender, age, weight, exerciseType, exerciseTime, information);
                 break;
             }
-            else
+            else // If they di not display a message telling the user that there is no informstion to display 
             {
                 cout << "No information to be displayed" << endl;
             }
 
-        case QUIT:
+        case QUIT: // To quit the program 
             break;
 
-        default:
+        default: // If the users input does not match an option on the text menu
             cout << "Invalid input. Please enter a valid menu option." << endl;
         }
 
-    } while (input != QUIT);
+    } while (input != QUIT); // Will loop as long as the user input does not equal the value stored in the QUIT constant 
 
     return 0;
 }
