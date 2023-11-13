@@ -86,7 +86,7 @@ void displayInfo(string name, string gender, int age, double weight, string exer
 {
     //chaeck if information was filled out
 
-        // Print the user’s information to the console
+        // Print the userâ€™s information to the console
     cout << '\n';//separate from menu
     cout << name << " (" << gender << ", " << age << " years)" << endl;
     cout << "Weight: " << weight << " kg" << endl;
