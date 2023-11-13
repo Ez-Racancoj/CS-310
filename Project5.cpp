@@ -1,6 +1,7 @@
-// Ez Racancoj this program keeps track of the users weekly fitness iformation
-//using functions to allow the user to select from different oporations on a text menu
-//and arrays to store the weekly information
+// Ez Racancoj this program 
+// This program keeps track of the users weekly fitness iformation
+// using functions to allow the user to select from different oporations on a text menu
+// and arrays to store the weekly information
 
 
 #include <iostream>
