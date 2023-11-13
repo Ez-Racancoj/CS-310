@@ -1,6 +1,6 @@
-//Ez Racancoj this program allows the user to select from different oporation 
-//and keeps track of their fitness bassed on the information given 
-//due date 10/3.
+// Ez Racancoj 
+// This program allows the user to select from different oporation 
+// and keeps track of their fitness bassed on the information given 
 
 #include <iostream>
 #include <string>
@@ -93,15 +93,15 @@ int main()
             information = true;
             break;
         case DISPLAY:
-            //chaeck if information was filled out
-            if (information)
+          
+            if (information) // Chek isf the user chose to enter their exercise information 
             {
                 // Print the user’s information to the console
-                cout << '\n';//separate from menu 
+                cout << endl;// Separate from menu 
                 cout << name << " (" << gender << ", " << age << " years)" << endl;
                 cout << "Weight: " << weight << " kg" << endl;
                 cout << "Exercise: " << exerciseType << " (" << exerciseTime << " minutes)" << endl;//print ecercise information
-                cout << '\n';//separate from menu 
+                cout << endl;// Separate from menu 
             }
             else
             {
